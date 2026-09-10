@@ -21,12 +21,17 @@ Team lead create repo and add participants
 5. Create actions.js and add all actions
 6. Create localeReducer.js + add actions
 7. Create reducers for accountReducer, localeReducer
-8. Must be such actions
-9. Add re-export
-10. Fix imports like this ../Balance/Balance"
-11. Add lazy for AccountPage
+8. Must be such actions:
 
 - "account/deposit"
 - "account/withdraw"
+- "locale/changeLang"
+
+9. Create Component LangSwitcher.jsx that should have a logic to change lang globally
+10. Show current locale(lang) in App
+
+11. Add re-export
+12. Fix imports like this ../Balance/Balance"
+13. Add lazy for AccountPage
 
 Потрібно подумати над тим, як організувати урок, що давати
