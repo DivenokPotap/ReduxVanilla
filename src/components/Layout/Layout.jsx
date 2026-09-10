@@ -1,5 +1,18 @@
-import css from "./Layout.module.css";
+import React, { Suspense } from "react";
+import { Outlet } from "react-router";
+import Container from "../Container";
+import AppBar from "../AppBar";
 
-export const Layout = ({ children }) => {
-  return <main className={css.container}>{children}</main>;
+export const Layout = () => {
+  return (
+    <Container>
+      <AppBar />
+
+      <main>
+        <Suspense fallback={<h1>Завантажуємось...</h1>}>
+          <Outlet />
+        </Suspense>
+      </main>
+    </Container>
+  );
 };
