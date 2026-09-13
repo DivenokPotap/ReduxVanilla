@@ -1,1 +1,0 @@
-import{i as e}from"./index-xvqvv4F6.js";var t=e();function n(){return(0,t.jsx)(`h1`,{children:`404 Сторінка не знайдена :(`})}export{n as default};
