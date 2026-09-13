@@ -1,1 +1,0 @@
-import{a as e}from"./index-C_G1dwCB.js";var t=e();function n(){return(0,t.jsx)(`h1`,{children:`404 Сторінка не знайдена :(`})}export{n as default};
