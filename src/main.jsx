@@ -10,7 +10,7 @@ import { store } from "./redux/store";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/redux">
+    <BrowserRouter basename="/ReduxVanilla">
       <Provider store={store}>
         <App />
       </Provider>
