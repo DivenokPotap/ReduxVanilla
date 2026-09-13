@@ -23,3 +23,5 @@ const LangSwitcher = () => {
 };
 
 export default LangSwitcher;
+
+// lang
