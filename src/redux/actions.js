@@ -11,3 +11,6 @@ export const withdraw = (amount) => ({
   type: "account/withdraw",
   payload: amount,
 });
+
+
+// actions
