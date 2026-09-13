@@ -1,5 +1,5 @@
 import Navigation from "../Navigation";
-import styles from "./Appbar.module.css";
+import styles from "./AppBar.module.css";
 import LangSwitcher from "../LangSwitcher/LangSwitcher";
 
 
