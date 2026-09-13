@@ -1,0 +1,1 @@
+import{a as e}from"./index-C_G1dwCB.js";var t={title:`_title_19f6w_1`},n=e();function r({text:e}){return(0,n.jsx)(`h1`,{className:t.title,children:e})}export{r as t};
