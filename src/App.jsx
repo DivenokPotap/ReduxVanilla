@@ -14,6 +14,7 @@ const BooksView = lazy(() => import("./pages/BooksView"));
 const BookDetailsView = lazy(() => import("./pages/BookDetailsView"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundView"));
 const TablePage = lazy(() => import("./pages/TableView"));
+const AccountPage = lazy(() => import("./pages/AccountPage"))
 
 export default function App() {
   const [authors, setAuthors] = useState([]);
@@ -42,6 +43,8 @@ export default function App() {
           path="books/:bookId"
           element={<BookDetailsView authors={authors} />}
         />
+
+        <Route path="/account" element={<AccountPage/>}/>
 
         <Route path="table" element={<TablePage />}>
           <Route

@@ -1,14 +1,22 @@
+import { changeLang } from "@/redux/actions";
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 const LangSwitcher = () => {
+  const dispatch = useDispatch()
+  const currentLang = useSelector((state) => state.locale.lang);
+  const handleChange = (event) => {
+    console.log(currentLang)
+    const selectedLanguage = event.target.value;
+    dispatch(changeLang(selectedLanguage))
+  }
   return (
     <div>
-      <h2>Lang Switcher</h2>
 
-      <select value="en">
-        <option value="uk">Uk</option>
-        <option value="en">En</option>
-        <option value="de">De</option>
+      <select value={currentLang} onChange={handleChange}>
+        <option value="Uk">Uk</option>
+        <option value="En">En</option>
+        <option value="De">De</option>
       </select>
     </div>
   );
