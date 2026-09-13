@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router";
 import * as bookShelfAPI from "./services/bookshelf-api";
 import { Layout } from "./components/Layout/Layout";
 
+
 const HomePage = lazy(() => import("./pages/HomeView"));
 const AuthorsPage = lazy(
   () => import("./pages/AuthorsView" /* webpackChunkName: "authors-view" */),
@@ -15,6 +16,7 @@ const BookDetailsView = lazy(() => import("./pages/BookDetailsView"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundView"));
 const TablePage = lazy(() => import("./pages/TableView"));
 const AccountPage = lazy(() => import("./pages/AccountPage"))
+const CounterPage = lazy(() => import("./pages/CounterPage"))
 
 export default function App() {
   const [authors, setAuthors] = useState([]);
@@ -44,7 +46,8 @@ export default function App() {
           element={<BookDetailsView authors={authors} />}
         />
 
-        <Route path="/account" element={<AccountPage/>}/>
+        <Route path="/account" element={<AccountPage />} />
+        <Route path="/counter" element={<CounterPage/>}/>
 
         <Route path="table" element={<TablePage />}>
           <Route

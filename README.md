@@ -41,4 +41,27 @@ Team lead create repo and add participants
 12. Fix imports like this ../Balance/Balance"
 13. Add lazy for AccountPage
 
+### Task1 Counter
+
+1. Add route /counter in App.jsx
+2. Setup store
+3. Create action for counter:
+
+- counter/increment
+- counter/decrement
+- counter/reset
+
+4. Create reducer for handling counter actions
+5. Subscribe components on redux state
+
+## Task2 Filter
+
+1. Run json server - npm run mock-api in add terminal
+2. Setup store
+3. Create action - filter/changeValue
+4. Create reducer for handling filter/changeValue
+5. create input + button reset filter (use formik - pro)
+6. Subscribe components on redux state
+
+
 #### Debugger
