@@ -1,0 +1,1 @@
+import{i as e}from"./index-Dbsmol5s.js";var t={title:`_title_19f6w_1`},n=e();function r({text:e}){return(0,n.jsx)(`h1`,{className:t.title,children:e})}export{r as t};
