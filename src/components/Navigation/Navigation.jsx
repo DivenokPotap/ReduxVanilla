@@ -5,6 +5,7 @@ const btnLinks = [
   { id: crypto.randomUUID(), href: "", title: "Головна" },
   { id: crypto.randomUUID(), href: "authors", title: "Автори" },
   { id: crypto.randomUUID(), href: "books", title: "Книги" },
+  { id: crypto.randomUUID(), href: "counter", title: "Лічильник" },
   { id: crypto.randomUUID(), href: "table", title: "Таблиця" },
   { id: crypto.randomUUID(), href: "account", title: "Аккаунт" },
 ];

@@ -1,6 +1,6 @@
 import Navigation from "../Navigation";
 import styles from "./AppBar.module.css";
-import LangSwitcher from "../LangSwitcher/LangSwitcher";
+import LangSwitcher from "@/components/LangSwitcher";
 
 
 export default function AppBar() {

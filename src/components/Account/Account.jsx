@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Balance from "../Balance/Balance";
+import Balance from "@/components/Balance";
 import { useDispatch } from "react-redux";
 import { deposit,withdraw } from "@/redux/actions";
 

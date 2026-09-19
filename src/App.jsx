@@ -2,7 +2,7 @@ import { lazy, useEffect, useState } from "react";
 import { Route, Routes } from "react-router";
 import * as bookShelfAPI from "./services/bookshelf-api";
 import { Layout } from "./components/Layout/Layout";
-
+const Filter = lazy(() => import("./components/Filter")) 
 
 const HomePage = lazy(() => import("./pages/HomeView"));
 const AuthorsPage = lazy(
@@ -47,7 +47,8 @@ export default function App() {
         />
 
         <Route path="/account" element={<AccountPage />} />
-        <Route path="/counter" element={<CounterPage/>}/>
+        <Route path="/counter" element={<CounterPage />} />
+        <Route path="/filter" element={<Filter/>}/>
 
         <Route path="table" element={<TablePage />}>
           <Route
