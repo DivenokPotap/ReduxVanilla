@@ -1,0 +1,1 @@
+import{f as e}from"./index-DKwWZ2pC.js";var t=e();function n(){return(0,t.jsx)(`h1`,{children:`404 Сторінка не знайдена :(`})}export{n as default};
