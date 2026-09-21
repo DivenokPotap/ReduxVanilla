@@ -1,17 +1,14 @@
-import { combineReducers, createStore } from "redux";
-import accountReducer from "./accountReducer";
-import localeReducer from "./localeReducer";
-import { devToolsEnhancer } from "@redux-devtools/extension";
-import countReducer from "./countReducer";
-import filterReducer from "./filterReducer";
+import accountReducer from "./accountSlice";
+import localeReducer from "./localeSlice";
+import countReducer from "./countSlice";
+import filterReducer from "./filterSlice";
+import { configureStore } from "@reduxjs/toolkit";
 
-const rootReducer = combineReducers({
-  account: accountReducer,
-  locale: localeReducer,
-  count: countReducer,
-  filter: filterReducer,
+export const store = configureStore({
+  reducer: {
+    account: accountReducer,
+    locale: localeReducer,
+    count: countReducer,
+    filter: filterReducer,
+  },
 });
-
-const devtoolsRedux = devToolsEnhancer();
-
-export const store = createStore(rootReducer, devtoolsRedux);

@@ -1,9 +1,10 @@
-import { decrement, increment, reset } from "@/redux/actions";
+import { decrement, increment, reset } from "@/redux/countSlice";
+import { getCurrentCounter } from "@/redux/selectors";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const Counter = () => {
-  const count = useSelector((state) => state.count.count);
+  const count = useSelector(getCurrentCounter);
   const dispatch = useDispatch();
 
   const handleIncrement = () => {

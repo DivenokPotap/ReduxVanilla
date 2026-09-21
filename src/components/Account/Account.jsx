@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Balance from "@/components/Balance";
 import { useDispatch } from "react-redux";
-import { deposit,withdraw } from "@/redux/actions";
+import { deposit,withdraw } from "@/redux/accountSlice";
 
 const Account = () => {
   const [inputValue, setInputValue] = useState(0);

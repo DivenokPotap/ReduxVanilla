@@ -4,13 +4,13 @@ import * as bookShelfAPI from "../services/bookshelf-api";
 import PageHeading from "../components/PageHeading";
 import Filter from "@/components/Filter";
 import { useSelector } from "react-redux";
+import { getCurrentFilter } from "@/redux/selectors";
 
 export default function BooksView() {
   const [books, setBooks] = useState([]);
   const controller = useRef(null);
 
-  const filter = useSelector((state) => state.filter.filter);
-
+  const filter = useSelector(getCurrentFilter);
   useEffect(() => {
     bookShelfAPI.fetchBooks().then(setBooks);
   }, []);
